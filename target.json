@@ -1,12 +1,12 @@
 {
     "device":"NRF52840_DK",
-    "processor":"NRF52840",
+    "processor":"NRF52833",
     "architecture":"CORTEX_M4F",
     "toolchain":"ARM_GCC",
     "post_process":"",
     "generate_bin":true,
     "generate_hex":true,
-    "definitions":"-DNRF52840_XXAA -DNRF52840 -DTARGET_MCU_NRF52840 -DNRF5 -D__CORTEX_M4 -DS140 -DTOOLCHAIN_GCC -D__START=target_start",
+    "definitions":"-DNRF52833_XXAA -DNRF52833 -DTARGET_MCU_NRF52833 -DNRF5 -D__CORTEX_M4 -DS140 -DTOOLCHAIN_GCC -D__START=target_start",
     "cmake_definitions":{
         "MBED_LEGACY_TOOLCHAIN":"GCC_ARM;"
     },
@@ -15,7 +15,7 @@
         "CONFIG_GPIO_AS_PINRESET": 1,
         "CONFIG_NFCT_PINS_AS_GPIOS": 1,
         "DEVICE_SRAM_BASE":"0x20000000",
-        "DEVICE_SRAM_END":"0x20040000",
+        "DEVICE_SRAM_END":"0x20020000",
         "DEVICE_STACK_BASE":"DEVICE_SRAM_END",
         "DEVICE_STACK_SIZE":2048,
         "DEVICE_HEAP_ALLOCATOR":1,

@@ -1,18 +1,20 @@
 MEMORY
 {
-  SD (rx) : ORIGIN = 0x00000, LENGTH = 0x26000
-  FLASH (rx) : ORIGIN = 0x26000, LENGTH = 0xD0000
-  RAM (rwx) : ORIGIN = 0x20008000, LENGTH = 0x38000
+  /* SD (rx) : ORIGIN = 0x00000, LENGTH = 0x27000 */
+  FLASH (rx) : ORIGIN = 0x0, LENGTH = 0x80000
+  RAM (rwx) : ORIGIN = 0x20000000, LENGTH = 0x20000
 }
 OUTPUT_FORMAT ("elf32-littlearm", "elf32-bigarm", "elf32-littlearm")
 ENTRY(Reset_Handler)
 SECTIONS
 {
+    /*
     .softdevice :
     {
         KEEP(*(.softdevice))
     } > SD
-
+    */
+    
     .text :
     {
         KEEP(*(.isr_vector))
