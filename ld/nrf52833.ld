@@ -19,6 +19,7 @@ SECTIONS
     {
         KEEP(*(.isr_vector))
         KEEP(*(.Vectors))
+        KEEP(*(.binmeta))
         *(.text*)
         KEEP(*(.init))
         KEEP(*(.fini))
