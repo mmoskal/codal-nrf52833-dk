@@ -36,8 +36,8 @@ DEALINGS IN THE SOFTWARE.
 #include "MicroBitFlash.h"
 #include "MicroBitSerial.h"
 
-#include "sdk_config.h"
-#include "app_util.h"
+// #include "sdk_config.h"
+// #include "app_util.h"
 
 
 /**

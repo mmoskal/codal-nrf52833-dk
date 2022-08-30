@@ -23,7 +23,7 @@ DEALINGS IN THE SOFTWARE.
 */
 
 #include "MicroBitPowerManager.h"
-#include "MicroBit.h"
+// #include "MicroBit.h"
 
 static const uint8_t UIPM_I2C_NOP[3] = {0,0,0};
 
