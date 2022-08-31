@@ -83,6 +83,7 @@ typedef enum {
     p46 = 46,
     p47 = 47,
 
+#ifndef __PXTBASE_H
     P0_0  = p0,
     P0_1  = p1,
     P0_2  = p2,
@@ -136,6 +137,7 @@ typedef enum {
     P1_13 = p45,
     P1_14 = p46,
     P1_15 = p47,
+#endif
 
     // IDENTITY MAPPINGS
     P0_00 = P0_0,
@@ -215,8 +217,9 @@ typedef enum {
 
     // Not connected
     NC = (int)0xFFFFFFFF
-} PinName;
+} MB_PinName;
 
+#define PinName MB_PinName
 
 
 //Edge Connector
