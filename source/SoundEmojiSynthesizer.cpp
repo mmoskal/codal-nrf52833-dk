@@ -49,6 +49,8 @@ SoundEmojiSynthesizer::SoundEmojiSynthesizer(uint16_t id, int sampleRate) : Coda
     setSampleRate(sampleRate);
     setSampleRange(1023);
     setOrMask(0);
+
+    lock.notify(); // HACK! how does this work in codal-microbit-v2 target?
 }
 
 /**
